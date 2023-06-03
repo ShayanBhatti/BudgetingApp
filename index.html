@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>budgeting App</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div id="calender"></div>
+      <div id="total">
+        Budget
+        <p id="track">0$</p>
+      </div>
+      <div class="bal">
+        Expense
+        <p id="remain">0.00$</p>
+      </div>
+      <div class="remainder">Remaining balance <p id="remainder">0$</p></div>
+
+      <div id="transaction">
+        Number of Transaction
+        <p id="transition">0</p>
+      </div>
+    </div>
+
+    <div class="cont">
+      <div class="budget">
+        <p style="display: inline-block">Monthly's Budget</p>
+       <input id="Budget" type="number" placeholder="Enter Budget" />
+        <button id="set Budget">ADD</button>
+      </div>
+      <div id="expenses">
+        <p style="display: inline-block">Monthly's Expenses</p>
+        <input id="Expenses" type="number" placeholder="Enter Expenses" />
+         Categories  <input type="text" id= "Text" placeholder="Type?"><br>
+       Date  <input id="date" type="date">
+         <button id="deduct Budget">ADD
+
+      </button>
+    <br><br><br><br><hr><br></div>
+    <div class="expensetrack"><h3 id="record">Record</h3>
+      <table id="expenseTable" width="100%" border="1" cellspacing="0" cellpadding="0"  >
+        <thead>
+          <tr>
+            
+            <th>Description</th>
+            <th>Amount</th>
+            <th>Date</th>
+           <th> Button</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+                <script src="./logic.js"></script>
+  </body>
+</html>
